@@ -43,7 +43,7 @@
 
 接收扫描结果
 
-注意：Constant.CODED_CONTENT引的是这个com.yzq.zxinglibrary.common.Constant
+注意：Constant.CODED_CONTENT引的是这个com.plgf.zxinglibrary.common.Constant
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -58,12 +58,3 @@
             }
         }
     }
-生成二维码
-     /*
-      * contentEtString：字符串内容
-     * w：图片的宽
-     * h：图片的高
-     logo：不需要logo的话直接传null
-     * */
-     Bitmap logo = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
-     bitmap = CodeCreator.createQRCode(contentEtString, 400, 400, logo);
